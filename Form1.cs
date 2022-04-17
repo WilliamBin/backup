@@ -43,7 +43,7 @@ namespace backup
             string targetFilePath = textBox1.Text;
             string sourceFilePath = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
             String bakFilePath = sourceFilePath + "bak" + DateTime.Now.ToString("yyyyMMddhhmmss");
-
+        
             if (Directory.Exists(bakFilePath) == false)
             {
                 Directory.CreateDirectory(bakFilePath);
