@@ -50,7 +50,8 @@ namespace backup
             }
             //string bakFilePath = System.IO.Path.Combine(sourceFilePath, "bak");
             CopyFilefolder(sourceFilePath, targetFilePath, bakFilePath);
-
+            //干完活干掉自己，喜欢多次使用的注释掉这句
+            Application.Exit();
 
         }
 
